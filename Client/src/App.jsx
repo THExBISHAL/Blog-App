@@ -1,6 +1,5 @@
 import "./App.css";
 import Login from "./components/Account/Login";
-import Signup from "./components/Account/SignUp";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import Dataprovider from "./context/DataProvider";
 import HomePage from "./components/Home/HomePage";
@@ -13,6 +12,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "sonner";
+import Signup from "./components/Account/Signup";
 
 const PrivateRoute = ({ isAuthenticated, ...props }) => {
   return isAuthenticated ? (
